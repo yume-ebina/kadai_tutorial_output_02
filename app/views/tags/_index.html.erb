@@ -1,0 +1,4 @@
+<div id="tagIndex">
+  <%= render partial: "tags/tag", collection: current_user.tags.select(&:persisted?), as: :tag %>
+</div>
+
