@@ -1,7 +1,7 @@
 class Todo < ApplicationRecord
   belongs_to :goal
   has_many :todo_tags
-  has_many :todos, through: :todo_tags
+  has_many :tags, through: :todo_tags
   accepts_nested_attributes_for :todo_tags
   
   acts_as_list scope: [:goal_id]
