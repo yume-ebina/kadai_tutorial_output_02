@@ -36,6 +36,8 @@
         <%= todo.created_at.strftime('%Y/%m/%d') %>
       </small>
     </div>
+    <div>
+      <%= render partial: "todos/tag", collection: todo.tags, as: :tag %>
+    </div>
   </div>
 </div>
-
